@@ -1,5 +1,7 @@
-public class Item {
 
+//Let's assume the items are laptops
+
+public class Item {
     private String name;
     private int id;
     private int quantity;
