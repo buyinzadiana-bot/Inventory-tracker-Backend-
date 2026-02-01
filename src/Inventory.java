@@ -2,8 +2,13 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Inventory{
-    private List<Item>laptops = new ArrayList<>();
+public class Inventory {
+    private List<Item> laptops = new ArrayList<>();
+
+    public void addLaptop(Item laptop) {
+        laptops.add(laptop);
+        System.out.println("laptop added to inventory.");
+    }
 }
 
 
