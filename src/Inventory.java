@@ -21,6 +21,17 @@ public class Inventory {
         }
         System.out.println("Laptop not found.");
     }
+
 }
+public void updateLaptop(int id, int quantity, double price) {
+    for (Item laptop : laptops) {
+        if (laptop.getId() == id) {
+            laptop.setQuantity(quantity);
+            laptop.setPrice(price);
+            System.out.println("Laptop updated.");
+            return;
+        }
+    }
+    System.out.println("Laptop not found.");
 
 
