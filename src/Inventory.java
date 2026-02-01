@@ -33,5 +33,22 @@ public void updateLaptop(int id, int quantity, double price) {
         }
     }
     System.out.println("Laptop not found.");
+    public void displayLaptops() {
+
+        if (laptops.isEmpty()) {
+            System.out.println("No laptops in inventory.");
+            return;
+        }
+
+        for (Item laptop : laptops) {
+            System.out.println(
+                    "ID: " + laptop.getId() +
+                            ", Model: " + laptop.getName() +
+                            ", Stock: " + laptop.getQuantity() +
+                            ", Price: $" + laptop.getPrice()
+            );
+        }
+    }
+}
 
 
